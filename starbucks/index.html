@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>sampleTemplate</title>
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="starbucks logo"></a></div>
+      
+        <ul class="">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <main class="showcase container">
+        <div class="content-container"> 
+           <div class="content">
+                <h2 class="tagline">It's not just coffee,<br> It's <span>Starbucks</span> </h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt ducimus optio ex
+                    voluptates, quis eligendi itaque soluta. Omnis neque impedit non ipsam quos ipsum voluptatem, explicabo
+                    quo tempora.</p>
+           </div>
+            <a href="#" class="btn">Learn More</a> 
+        </div>
+
+        <div class="big-pic">
+            <img src="images/img1.png" alt="green sundae" class="starbucks">
+            <div class="circle"></div>
+        </div>
+
+        <ul class="socmed">
+            <li><a href="#" class="btn-light"><img src="images/facebook.png" alt="facebook logo"></a></li>
+            <li><a href="#" class="btn-light"><img src="images/twitter.png" alt="twitter logo"></a></li>
+            <li><a href="#" class="btn-light"><img src="images/instagram.png" alt="instagram logo"></a></li>
+        </ul>
+
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" alt="green sundae" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/thumb2.png" alt="pink sundae" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/thumb3.png" alt="purple sundae" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    </main>
+
+ 
+    <script type="text/javascript">
+		function imgSlider(anything)
+		{
+			document.querySelector('.starbucks').src = anything;
+		}
+
+		function changeCircleColor(color)
+		{
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+
+	</script>
+
+</body>
+
+</html>

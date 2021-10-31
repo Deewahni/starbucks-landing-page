@@ -1,0 +1,22 @@
+
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   
+   .logo {
+       width: 80px;
+       height: 80px;
+
+   }
+   ul {
+        display: flex;
+
+        a:hover {
+            background-color: #017143;
+            color: #fff;
+        }
+
+   }
+}
